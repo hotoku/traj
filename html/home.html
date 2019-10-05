@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <head>    
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+        integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47"
+        crossorigin="anonymous">
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 </head>
 <body>    
-  <form action="/show" method="get">
-    user id: <input name="user_id" type="text" />
-    <input value="show" type="submit" />
+  <form class="pure-form">
+    <fieldset>
+      <legend>input user id</legend>
+
+      <input type="text" placeholder="User ID">
+      <button type="submit" class="pure-button pure-button-primary">show</button>
+    </fieldset>
   </form>
 </body>

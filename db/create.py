@@ -7,21 +7,9 @@ with sqlite3.connect(dbname) as conn:
     c.executescript("""
 create table positions(
   id primary key, 
-  user_id,
+  user_id text,
   lattitude real,
   longtitude real
 );
-
-insert into 
-positions(user_id, lattitude, longtitude)
-values(1, 35.681382, 139.76608399999998);
-
-insert into 
-positions(user_id, lattitude, longtitude)
-values(2, 35.681382, 139.76608399999998);
-
-insert into 
-positions(user_id, lattitude, longtitude)
-values(2, 35.674596, 139.762013);
 """)
     conn.commit()
