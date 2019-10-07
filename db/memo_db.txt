@@ -1,0 +1,5 @@
+positionsテーブル
+id: PK
+user_id: 文字列
+latitude: 緯度
+longitude: 経度
